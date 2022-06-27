@@ -1,0 +1,3 @@
+include ':glidelibrary'
+include ':app'
+rootProject.name = "GlideModel"
