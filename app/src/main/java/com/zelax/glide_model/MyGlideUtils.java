@@ -19,6 +19,7 @@ import com.zelax.glidelibrary.progress.GlideApp;
 import com.zelax.glidelibrary.progress.OnProgressListener;
 import com.zelax.glidelibrary.progress.ProgressManager;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -129,12 +130,12 @@ public class MyGlideUtils {
                 .into(iv);
     }
 
-    public static void loadRoundImg(Context mContext,ImageView iv,String url,int radius){
+    public static void loadRoundImg(Context mContext, ImageView iv, String url, int radius, @DrawableRes int res){
         GlideApp.with(mContext)
                 .load(url)
                 .centerCrop()
                 .setRound(radius)
-                .placeholder(R.drawable.abc_vector_test)
+                .placeholder(res)
                 .into(iv);
     }
 

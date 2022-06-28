@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void circleClick(View view) {
 //        MyGlideUtils.loadCircleImg(this, iv, circleUrl);
 //        MyGlideUtils.loadBlurImg(this, iv , circleUrl,25);
-        MyGlideUtils.loadRoundImg(this, iv , circleUrl , 10);
+        MyGlideUtils.loadRoundImg(this, iv , circleUrl , 10,R.drawable.ic_launcher_background);
     }
 
 
